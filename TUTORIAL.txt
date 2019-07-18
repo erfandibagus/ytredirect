@@ -1,0 +1,50 @@
+----------------------------
+CARA UPLOAD KE HOSTING
+----------------------------
+Langkah (1)
+- Login ke CPanel Hosting
+- Klik MySQL Databases
+- Buat database MySQL baru
+- Catat informasi database seperti user, password dan nama database-nya
+
+Note: Jika Bingung Silahkan Cari Tutorial di Google
+Keyword: Cara Membuat Database MySQL di CPanel
+
+Langkah (2)
+- Kembali ke Dashboard CPanel
+- Klik PhpMyAdmin
+- Pilih/klik database yang baru saja dibuat
+- Klik menu Import
+- Klik Choose file, cari file ytredirect.sql
+- Klik Go
+
+Note: Jika Bingung Silahkan Cari Tutorial di Google
+Keyword: Cara Import Database MySQL melalui PhpMyAdmin di CPanel
+
+Langkah (3)
+- Kembali ke Dashboard CPanel
+- Klik File Manager
+- Buka folder public_html
+- Upload file ytredirect.zip
+- Extract file ytredirect.zip
+- Hapus file ytredirect.sql dan ytredirect.zip
+- Buka folder application -> config
+- Edit file database.php, cari:
+
+'username' => 'Your Database Username Here',
+'password' => 'Your Database Password Here',
+'database' => 'Your Database Name Here',
+
+- Ganti dengan informasi user, password dan nama database yang sudah dibuat pada Langkah (1)
+- Jika sudah, jangan lupa disimpan
+- Selesai
+
+----------------------------
+INFO
+----------------------------
+- Masuk ke Halaman Admin http://domain-mu.com/admin
+- Login dengan Username dan Password : admin
+
+----------------------------
+Author: https://erfandibagus.com
+----------------------------
